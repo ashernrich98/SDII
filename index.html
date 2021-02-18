@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--Background color of page -->
+<style>
+
+    body {
+        background-color: silver;
+    }
+</style>
+<body>
+
+
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-wide w3-padding w3-card">
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-left ">
+                <img src="files/CoE.png" style="width:21%;">
+            </div>
+            <div class="w3-right ">
+                <a href="#abstract" class="w3-bar-item w3-button">Abstract</a>
+                <a href="#sponsor" class="w3-bar-item w3-button">Sponsors</a>
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#documents" class="w3-bar-item w3-button">Documents</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-center w3-padding-64">
+
+
+        <!--Background Image w/ white text-->
+        <style>
+            .intro {
+                text-align: center;
+                position: relative;
+                background-image: url(files/background.jpg);
+                background-attachment: fixed;
+                padding-bottom: 280px;
+                padding-top: 200px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: white;
+                margin: 20px auto 0px auto;
+                width: 1800px;
+                max-width: calc(100% - 75px);
+                display: block;
+            }
+        </style>
+        <div class="intro">
+
+            <img src="files/T307Logo.png" style="width:12%; min-width:100px; min-height:50px;">
+
+            <h1>Team 307: Narrow Band "Oscilloscope" for High Power Tuning of NMR Probes</h1>
+
+        </div>
+
+        <!-- Page content -->
+        <div class="w3-content w3-padding" style="max-width:2000px">
+
+            <!-- Documents Section -->
+            <div class="w3-container w3-padding-32" id="documents">
+                <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Documents</h1>
+                <p>Files under here.</p>
+
+                <a href="files/Document1.pdf" title="Open Document1">Document1</a>
+
+
+
+            </div>
+
+            <!-- Abstract Section -->
+            <div class="w3-container w3-padding-32" id="abstract">
+                <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Abstract</h1>
+            </div>
+            <!--Background Image w/ white text-->
+            <style>
+                .intro1 {
+                    text-align: center;
+                    position: relative;
+                    background-image: url(files/background.jpg);
+                    background-attachment: fixed;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    padding-top: 350px;
+                    padding-bottom: 350px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    color: white;
+                    margin: 0 auto;
+                    width: 1800px;
+                    display: block;
+                    max-width: calc(100% - 40px);
+                }
+            </style>
+
+            <div class="intro1">
+                <p>
+                    The National High Magnetic Field Laboratory performs an experiment using Nuclear
+                    Magnetic Resonance (NMR) probes. The experiment uses radio frequency (RF) pulses and an
+                    oscilloscope to observe the incoming and reflecting power. The purpose of the oscilloscope is to
+                    assist the user in adjusting, or tuning, the probes to prevent damage within them and the
+                    experiment. The goal of the project is to use a Software Defined Radio (SDR) to replace the
+                    oscilloscope by having it mimic its functionality to observe the RF pulses.
+                    By using two Adalm Pluto SDRs and their receiver ports, the incoming and reflecting RF
+                    pulses data can be used on a computer using software. Using the software, the ratio of the RF
+                    pulses is calculated and displayed on a graph for the user to observe. The SDRs are synchronized
+                    physically as well as through the software to help line up the data with the experiment. This
+                    allows them to effectively tune the probes to prevent damage within them.
+                    We were able to accurately measure, record, and display the RF pulses from the
+                    experiment. With the success of this project, the Magnetic Lab no longer needs to spend an
+                    excessive amount of money on oscilloscopes to monitor these NMR experiments. This allows
+                    them to use the oscilloscopes for other purposes instead of the simple purpose of a quick
+                    observation.
+                </p>
+            </div>
+
+            <!-- Sponsor Section -->
+            <div class="w3-container w3-padding-32" id="sponsor">
+                <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Sponsors</h1>
+
+            </div>
+
+            <div class="w3-row-padding">
+                <div class="row">
+                    <div class="column">
+                        <img src="files/Brey.JPG" alt="Brey Pic" style="object-fit: cover; width: 45%; min-width:255px; height: 485px;">
+                        <h3>William Brey</h3>
+                        <p class="w3-opacity">Magnetic Lab Research Faculty</p>
+                        <p>Appointed Project Customer</p>
+                    </div>
+                    <div class="column">
+                        <img src="files/Holcomb.JPG" alt="Holcomb Pic" style="object-fit: cover; width: 45%; min-width:255px; height: 485px;">
+                        <h3>Paul Holcomb</h3>
+                        <p class="w3-opacity">Keysight Project Technical Advisor</p>
+
+                    </div>
+
+                    <style>
+                        .column {
+                            flex: 33.33%;
+                        }
+
+                        .row {
+                            content: "";
+                            clear: both;
+                            display: flex;
+                        }
+                    </style>
+                </div>
+            </div>
+
+            <style>
+                .container {
+                    text-align: center;
+                }
+            </style>
+
+
+        </div>
+        <!-- About Section -->
+        <div class="w3-container w3-padding-32" id="about">
+            <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <!-- ProfPhoto/description -->
+        <div class="w3-row-padding">
+            <div class="w3-col l2 m6 w3-margin-bottom">
+                <img src="files/Jonathan.jpg" alt="Jonathan Pic" style="object-fit:cover;width:100%;height:420px">
+                <h3>Jonathan Burt</h3>
+                <p class="w3-opacity">Document, programming, and research leader</p>
+                <p>Extra description for Jonathan</p>
+            </div>
+            <div class="w3-col l2 m6 w3-margin-bottom">
+                <img src="files/Gabriel.jpg" alt="Gabriel Pic" style="object-fit: cover; width: 100%; height: 420px ">
+                <h3>Gabriel De Leon</h3>
+                <p class="w3-opacity">Circuit & Hardware Assembly Lead  Financial Advisor</p>
+                <p>Extra description Gabriel</p>
+            </div>
+            <div class="w3-col l2 m6 w3-margin-bottom">
+                <img src="files/Emil.jpg" alt="Emil Pic" style="object-fit: cover; width: 100%; height: 420px ">
+                <h3>Emil Lobachev</h3>
+                <p class="w3-opacity">Lead ECE</p>
+                <p>Extra description for Emil</p>
+            </div>
+            <div class="w3-col l2 m6 w3-margin-bottom">
+                <img src="files/Asher.png" alt="Asher Pic" style="object-fit: cover; width: 100%; height: 420px ">
+                <h3>Asher Rich</h3>
+                <p class="w3-opacity">Team Leader</p>
+                <p>Extra description for Asher</p>
+            </div>
+            <div class="w3-col l2 m6 w3-margin-bottom">
+                <img src="files/Kyle.JPG" alt="Kyle Pic" style="object-fit: cover; width: 100%; height: 420px ">
+                <h3>Kyle</h3>
+                <p class="w3-opacity">Research Lead</p>
+                <p>Extra description for Kyle</p>
+            </div>
+        </div>
+
+
+
+
+        <!-- End page content -->
+    </div>
+    </div>
+
+
+    <!-- Footer -->
+    <!--
+    <footer class="w3-center w3-black w3-padding-16">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+            -->
+</body>
+</html>
