@@ -4,13 +4,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!--Background color of page -->
-<style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    body {
-        background-color: silver;
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", Helvetica;}
+    body, html {
+      height: 100%;
+      color: black;
+      background-color: silver;
+      line-height: 1.8;
+    }
+    
+    /* Create a Parallax Effect */
+    .bgimg-1 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;  /* if issue test this line */
+      background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url("files/t307logo.png");
+      min-height: 100%;
+    }
+    
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+    
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+      .bgimg-1{
+        background-attachment: scroll;
+        min-height: 400px;
+      }
     }
 </style>
+
 <body>
 
     <!-- Navbar (sit on top) -->
@@ -18,64 +49,46 @@
         <div class="w3-bar w3-black w3-wide w3-padding w3-card">
             <!-- Float links to the right. Hide them on small screens -->
             <div class="w3-left ">
-                <img src="files/CoE.png" style="width:150px;">
-                <img src="files/Keysight.png" style="width:150px;">
-                <img src="files/MagLab.png" style="width:150px;">
+                <img src="files/coe.png" style="width:150px;">
+                <img src="files/keysight.png" style="width:150px;">
+                <img src="files/maglab.png" style="width:150px;">
             </div>
             <div class="w3-right ">
-                <!-- This is a dropdown for the abstract -->				
-				<div class="w3-dropdown-hover">
-					<button href="#Abstract" class="w3-button w3-black">Abstract</button>
-					<div class="w3-dropdown-content w3-bar-block w3-border">
-						<a href="files/Abstract.pdf" class="w3-bar-item w3-button">Abstract</a>
-					</div>
-				</div>
-				
-                
-                <a href="#sponsor" class="w3-bar-item w3-button">Sponsors</a>
-<!-- JonathanB5299-patch-1 -->
-                <a href="#about" class="w3-bar-item w3-button">About</a>
-                
-                
-                <!-- This is a dropdown menu -->
-				<div class="w3-dropdown-hover">
-					<button href="#documents" class="w3-button w3-black">Documents</button>
-					<div class="w3-dropdown-content w3-bar-block w3-border">
-						<a href="files/Document1.pdf" class="w3-bar-item w3-button">Document1</a>
-					</div>
-				</div>
-
-                <a href="#teamintro" class="w3-bar-item w3-button">Introduction</a>
+                <a href="#home" class="w3-bar-item w3-button">Home</a>
+                <a href="#intro" class="w3-bar-item w3-button">Introduction</a>
+                <a href="#scope" class="w3-bar-item w3-button">Scope</a>
+                <a href="#sponsors" class="w3-bar-item w3-button">Sponsors</a>
                 <a href="#documents" class="w3-bar-item w3-button">Documents</a>
             </div>
         </div>
     </div>
 
+    <div class="w3-center">
 
-    <div class="w3-center w3-padding-64">
-
-
-        <!--Background Image w/ white text-->
+        <!-- Home Introduction Scope Sponsors Documents -->
+        
+        <!-- Background Image -->
         <style>
-            .intro {
+            .home {
                 text-align: center;
                 position: relative;
-                background-image: url(files/background1.png);
+                background-image: url(files/bkgnd.png);
                 background-attachment: fixed;
                 padding-bottom: 280px;
                 padding-top: 200px;
                 background-repeat: no-repeat;
                 background-size: cover;
                 color: rgb(0, 0, 0);
-                margin: 20px auto 0px auto;
-                width: 1800px;
+                margin: 0% auto;
+                width: 100%;
                 max-width: calc(100% - 75px);
                 display: block;
             }
         </style>
-        <div class="intro">
 
-            <img src="files/T307Logo.png" style="width:12%; min-width:100px; min-height:50px;">
+        <div class="home">
+
+            <img src="files/t307logo.png" style="width:12%; min-width:100px; min-height:50px;">
             <h1>Team 307</h1>
             <h1>Narrow Band "Oscilloscope" for High Power Tuning of NMR Probes</h1>
 
@@ -86,23 +99,24 @@
 
             <!-- Documents Section -->
             <div class="w3-container w3-padding-32" id="documents">
-                <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Documents</h1>
+                <h1 class="w3-border-top w3-border-bottom w3-border-white w3-padding-16">Documents</h1>
+                
                 <p>Team Files:</p>
-
-                <a href="files/SD_T307_2021_2_18_Abstract.pdf" target= "_blank" title="Abstract">Abstract</a>
+                <a href="abstract.pdf" target= "_blank" title="Abstract">Abstract</a>
 
             </div>
 
             <!-- Abstract Section -->
             <div class="w3-container w3-padding-32" id="abstract">
-                <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Abstract</h1>
+                <h1 class="w3-border-top w3-border-bottom w3-border-white w3-padding-16">Abstract</h1>
             </div>
+           
             <!--Background Image w/ white text-->
             <style>
                 .intro1 {
                     text-align: center;
                     position: relative;
-                    background-image: url(files/background1.png);
+                    background-image: url(files/bkgnd.png);
                     background-attachment: fixed;
                     padding-left: 50px;
                     padding-right: 50px;
@@ -141,72 +155,35 @@
 
             <!-- Sponsor Section -->
             <div class="w3-container w3-padding-32" id="sponsor">
-                <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Sponsors</h1>
-
+                <h1 class="w3-border-top w3-border-bottom w3-border-white w3-padding-16">Sponsors</h1>
+                <img src="files/sponsors.png" style="width:85%; max-width:500px; min-width: 160px;">
             </div>
-
-            <div class="w3-row-padding">
-                <div class="row">
-                    <div class="column">
-                        <img src="files/Brey.JPG" alt="Brey Pic" style="object-fit: cover; width: 45%; min-width:255px; height: 485px;">
-                        <h3>William Brey</h3>
-                        <p class="w3-opacity">Magnetic Lab Research Faculty</p>
-                        <p>Appointed Project Customer</p>
-                    </div>
-                    <div class="column">
-                        <img src="files/Holcomb.JPG" alt="Holcomb Pic" style="object-fit: cover; width: 45%; min-width:255px; height: 485px;">
-                        <h3>Paul Holcomb</h3>
-                        <p class="w3-opacity">Keysight Project Technical Advisor</p>
-
-                    </div>
-
-                    <style>
-                        .column {
-                            flex: 33.33%;
-                        }
-
-                        .row {
-                            content: "";
-                            clear: both;
-                            display: flex;
-                        }
-                    </style>
-                </div>
-            </div>
-
-            <style>
-                .container {
-                    text-align: center;
-                }
-            </style>
-
 
         </div>
+
         <!-- Team Intro Section -->
-        <div class="w3-container w3-padding-32" id="teamintro">
-            <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Introduction</h1>
+        <div class="w3-container w3-padding-32" id="intro">
+            <h1 class="w3-border-top w3-border-bottom w3-border-white w3-padding-16">Introduction</h1>
             <p>
                             Format:
                 Name 2 sec
                 “Senior” student at FAMU-FSU… CE/EE 2 sec
                 First role description 4 sec 
                 Second role description 4 sec
-
             </p>
         </div>
-        <!-- ProfPhoto/description -->
         
-        <img src="files/Team.png" style="width:85%; max-width:1300px; min-width: 400px;">
-
+        <!-- ProfPhoto/description -->
+        <div>
+            <img src="files/team.png" style="width:85%; max-width:1300px; min-width: 400px;">
+        </div>
         <!-- End page content -->
-    </div>
-    </div>
 
-    <!-- Footer -->
-    <!--
-    <footer class="w3-center w3-black w3-padding-16">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-    </footer>
-            -->
+    </div>
+*/
+
+
+
+
 </body>
 </html>
