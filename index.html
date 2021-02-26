@@ -4,209 +4,308 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<!--Background color of page -->
-<style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    body {
-        background-color: silver;
+<head>
+	<link rel="icon" href="files/t307logo.png" type="image/gif">
+</head>
+
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", Helvetica;}
+    body, html {
+      height: 100%;
+      color: black;
+      background-color: silver;
+      line-height: 1.8;
+    }
+    
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bgimg-1 {
+    background-image: url("files/bkgnd.png");
+    min-height: 100%;
+    text-align: center;
+    }
+
+    .bgimg-2 {
+    background-image: url("files/bkgnd.png");
+    min-height: 400px;
+    text-align: center;
+    }
+
+    .bgimg-3 {
+    background-image: url("files/bkgnd.png");
+    min-height: 400px;
+    }
+
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+
+    @media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
     }
 </style>
+
 <body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-padding-32 w3-card" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+    </a>
 
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar w3-black w3-wide w3-padding w3-card">
-            <!-- Float links to the right. Hide them on small screens -->
-            <div class="w3-left ">
-                <img src="files/CoE.png" style="width:150px;">
-                <img src="files/Keysight.png" style="width:150px;">
-                <img src="files/MagLab.png" style="width:150px;">
-            </div>
-            <div class="w3-right ">
-                <!-- This is a dropdown for the abstract -->				
-				<div class="w3-dropdown-hover">
-					<button href="#Abstract" class="w3-button w3-black">Abstract</button>
-					<div class="w3-dropdown-content w3-bar-block w3-border">
-						<a href="files/Abstract.pdf" class="w3-bar-item w3-button">Abstract</a>
-					</div>
-				</div>
-				
-                
-                <a href="#sponsor" class="w3-bar-item w3-button">Sponsors</a>
-<!-- JonathanB5299-patch-1 -->
-                <a href="#about" class="w3-bar-item w3-button">About</a>
-                
-                
-                <!-- This is a dropdown menu -->
-				<div class="w3-dropdown-hover">
-					<button href="#documents" class="w3-button w3-black">Documents</button>
-					<div class="w3-dropdown-content w3-bar-block w3-border">
-						<a href="files/Document1.pdf" class="w3-bar-item w3-button">Document1</a>
-					</div>
-				</div>
-
-                <a href="#teamintro" class="w3-bar-item w3-button">Introduction</a>
-                <a href="#documents" class="w3-bar-item w3-button">Documents</a>
-            </div>
-        </div>
+    <div class="w3-left ">
+        <img src="files/coe.png" style="width:150px;">
+        <img src="files/keysight.png" style="width:150px;">
+        <img src="files/maglab.png" style="width:150px;">
     </div>
+    
+    <div class="w3-right ">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-aqua"><i class="fa fa-home"></i> HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-light-green"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#documents" class="w3-bar-item w3-button w3-hide-small w3-hover-light-green"><i class="fa fa-th"></i> DOCUMENTS</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-light-green"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+</div>
 
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#documents" class="w3-bar-item w3-button" onclick="toggleFunction()">DOCUMENTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
 
-    <div class="w3-center w3-padding-64">
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+    <img src="files/t307logo.png" style="width:25%; min-width:50px; min-height:50px;">
+    <span class="w3-xxlarge w3-text-black w3-wide"><p></p>Narrow Band "Oscilloscope"<p></p>for High Power Tuning<p></p>of NMR Probes</span>
+    </div>
+</div>
 
-
-        <!--Background Image w/ white text-->
-        <style>
-            .intro {
-                text-align: center;
-                position: relative;
-                background-image: url(files/background1.png);
-                background-attachment: fixed;
-                padding-bottom: 280px;
-                padding-top: 200px;
-                background-repeat: no-repeat;
-                background-size: cover;
-                color: rgb(0, 0, 0);
-                margin: 20px auto 0px auto;
-                width: 1800px;
-                max-width: calc(100% - 75px);
-                display: block;
-            }
-        </style>
-        <div class="intro">
-
-            <img src="files/T307Logo.png" style="width:12%; min-width:100px; min-height:50px;">
-            <h1>Team 307</h1>
-            <h1>Narrow Band "Oscilloscope" for High Power Tuning of NMR Probes</h1>
-
+<!-- Container (About Section) -->
+<div class="w3-auto w3-container w3-padding-64 w3-center" style="max-width:1750px" id="about">
+    <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">ABOUT</h3>
+    <p class="w3-center w3-xlarge w3-padding-top-16"><em>TEAM INFO</em></p>
+    <p class="w3-center w3-large">T307 is comprised of 5 unique individuals who found a shared interest in this project.</p>
+	
+    <div class="row">
+		<!-- This is a filler column for formatting-->
+		<div class="w3-col m1 w3-center w3-padding-large">
+        <p></p>
+		<p></p>
         </div>
-
-        <!-- Page content -->
-        <div class="w3-content w3-padding" style="max-width:2000px">
-
-            <!-- Documents Section -->
-            <div class="w3-container w3-padding-32" id="documents">
-                <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Documents</h1>
-                <p>Team Files:</p>
-
-                <a href="files/SD_T307_2021_2_18_Abstract.pdf" target= "_blank" title="Abstract">Abstract</a>
-
-            </div>
-
-            <!-- Abstract Section -->
-            <div class="w3-container w3-padding-32" id="abstract">
-                <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Abstract</h1>
-            </div>
-            <!--Background Image w/ white text-->
-            <style>
-                .intro1 {
-                    text-align: center;
-                    position: relative;
-                    background-image: url(files/background1.png);
-                    background-attachment: fixed;
-                    padding-left: 50px;
-                    padding-right: 50px;
-                    padding-top: 350px;
-                    padding-bottom: 350px;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    color: rgb(0, 0, 0);
-                    margin: 0 auto;
-                    width: 1800px;
-                    display: block;
-                    max-width: calc(100% - 40px);
-                }
-            </style>
-
-            <div class="intro1">
-                <p>
-                    The National High Magnetic Field Laboratory performs an experiment using Nuclear
-                    Magnetic Resonance (NMR) probes. The experiment uses radio frequency (RF) pulses and an
-                    oscilloscope to observe the incoming and reflecting power. The purpose of the oscilloscope is to
-                    assist the user in adjusting, or tuning, the probes to prevent damage within them and the
-                    experiment. The goal of the project is to use a Software Defined Radio (SDR) to replace the
-                    oscilloscope by having it mimic its functionality to observe the RF pulses.
-                    By using two Adalm Pluto SDRs and their receiver ports, the incoming and reflecting RF
-                    pulses data can be used on a computer using software. Using the software, the ratio of the RF
-                    pulses is calculated and displayed on a graph for the user to observe. The SDRs are synchronized
-                    physically as well as through the software to help line up the data with the experiment. This
-                    allows them to effectively tune the probes to prevent damage within them.
-                    We were able to accurately measure, record, and display the RF pulses from the
-                    experiment. With the success of this project, the Magnetic Lab no longer needs to spend an
-                    excessive amount of money on oscilloscopes to monitor these NMR experiments. This allows
-                    them to use the oscilloscopes for other purposes instead of the simple purpose of a quick
-                    observation.
-                </p>
-            </div>
-
-            <!-- Sponsor Section -->
-            <div class="w3-container w3-padding-32" id="sponsor">
-                <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Sponsors</h1>
-
-            </div>
-
-            <div class="w3-row-padding">
-                <div class="row">
-                    <div class="column">
-                        <img src="files/Brey.JPG" alt="Brey Pic" style="object-fit: cover; width: 45%; min-width:255px; height: 485px;">
-                        <h3>William Brey</h3>
-                        <p class="w3-opacity">Magnetic Lab Research Faculty</p>
-                        <p>Appointed Project Customer</p>
-                    </div>
-                    <div class="column">
-                        <img src="files/Holcomb.JPG" alt="Holcomb Pic" style="object-fit: cover; width: 45%; min-width:255px; height: 485px;">
-                        <h3>Paul Holcomb</h3>
-                        <p class="w3-opacity">Keysight Project Technical Advisor</p>
-
-                    </div>
-
-                    <style>
-                        .column {
-                            flex: 33.33%;
-                        }
-
-                        .row {
-                            content: "";
-                            clear: both;
-                            display: flex;
-                        }
-                    </style>
-                </div>
-            </div>
-
-            <style>
-                .container {
-                    text-align: center;
-                }
-            </style>
-
-
+		
+		<!-- the "l2" allows for the columns to collapse when shrinking the page quicker.
+			the 2 part is for the columns and was the best I could do unfortunately-->
+		<div class="w3-col l2 w3-center w3-padding-large">
+        <p><b>Jonathan Burt</b></p>
+		<p>Computer Engingeering Major</p><p>Lead programmer. Reliable recorder of correspondance between the group. Key producer of insight to accelerate assignment finalization.</p>
         </div>
-        <!-- Team Intro Section -->
-        <div class="w3-container w3-padding-32" id="teamintro">
-            <h1 class="w3-border-bottom w3-border-light-grey w3-padding-16">Introduction</h1>
-            <p>
-                            Format:
-                Name 2 sec
-                “Senior” student at FAMU-FSU… CE/EE 2 sec
-                First role description 4 sec 
-                Second role description 4 sec
-
-            </p>
+		
+		<div class="w3-col l2 w3-center w3-padding-large">
+        <p><b>Gabriel De Leon</b></p>
+		<p>Computer Engingeering Major</p><p>The spearhead of website development. Essential monitor of team finances. Exemplary availability for assistance to others.</p>
         </div>
-        <!-- ProfPhoto/description -->
+		
+		<div class="w3-col l2 w3-center w3-padding-large">
+        <p><b>Emil Lobachev</b></p>
+		<p>Electrical Engingeering Major</p><p>Lead organizer to achieve targets. Key hardware and software integrator. Responsible for effective communication flow with external contacts.</p>
+        </div>
+		
+		<div class="w3-col l2 w3-center w3-padding-large">
+        <p><b>Asher Rich</b></p>
+		<p>Computer Engingeering Major</p><p>Team Leader. Tasking asignor. Assignment verifier and finalizer. Administrator of agile operations.</p>
+        </div>
+		
+		<div class="w3-col l2 w3-center w3-padding-large">
+        <p><b>Kyle York</b></p>
+		<p>Electrical Engingeering Major</p><p>Lead researcher. Principal circuit assembly and in charge of project design aspects. Information and communication reference point. </p>
+        </div>		
+    </div>
+	
+	
+	<div>
+	<!--The image will scale down because of the w3-image class. It will go larger because of it as well-->
+	<img src="files/team.png" class="w3-image w3-center w3-padding" alt="Team Photo" >
+    </div>
+	
+	<!--Project Scope-->
+    <p class="w3-center w3-xlarge w3-padding-top-16"><em>PROJECT SCOPE</em></p>
+    <p class="w3-center w3-large">To assemble a prototype using a Software Defined Radio (SDR) to mimic an expensive oscilloscope.</p>
+	<p class="w3-center w3-large">The SDR must be able to measure Radio Frequency (RF) pulses obtained from complex experiments effectively.</p>
+	
+	<!--Sponsor and Advisor Info-->
+	<p class="w3-center w3-xlarge w3-padding-top-16"><em>CUSTOMER AND SPONSOR</em></p>
+	
+	<!--This is for the advisor information and columns-->
+	<div class="row">
+		
+		<!-- the "l2" allows for the columns to collapse when shrinking the page quicker.
+			the 2 part is for the columns and was the best I could do unfortunately
+		<div class="w3-col l6 w3-center w3-padding-large">
+        <p><b>Dr. William Brey</b></p>
+		<p>The team's official sponsor of the project. Dr. Brey is also the targeted customer of our project.</p>
+        </div>
+		
+		<div class="w3-col l6 w3-center w3-padding-large">
+        <p><b>Paul Holcomb</b></p>
+		<p>The team's advisor from Keysight Technologies. Mr. Holcomb's knowledge regarding oscilloscopes greatly aided our project.</p>
+        </div>
+		
+    	We this is for Dr. Arora. We don't have a picture of him or a description. He isn't in this photo so I excluded him.
+		Pay attention to this "l4". If we add Arrora, we must change "l6" to "l4". 
+		<div class="w3-col l4 w3-center w3-padding-large">
+        <p><i class="fa fa-user"><b></i>Kyle York</b></p>
+		<p>A fourth year Electrical Engingeering Major. The lead on research our project reserach and circuit assembly.</p>
+        </div>
+        -->	
+    </div>
+	
+	<div>
+	<!--The image will scale down because of the w3-image class. It will go larger because of it as well-->
+	<img src="files/sponsors.png" class="w3-image w3-center w3-padding" alt="Advisor/Sponsor Photo" width="600">
+    </div>
+	
+	<!--Project Scope
+	<p class="w3-center w3-xlarge w3-padding-top-16"><em>Project Progress</em></p>
+    -->
+	<div class="row">
+    <p class="w3-wide"><i class="fa fa-spinner" style="font-size:24px"></i>Project Progress</p>
+    <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+    </div>
+	</div>
+
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-black w3-wide"> </span>
+    </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="documents">
+    <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">DOCUMENTS</h3>
+    <p></p>
+    <a href="files/abstract.pdf" target= "_blank" title="ABSTRACT">ABSTRACT</a>
+    <p></p>
+    <a href="files/vdr3.pdf" target= "_blank" title="VDR3">VDR3</a>
+    <p></p>
+    <a href="files/vdr4.pdf" target= "_blank" title="VDR4">VDR4</a>
+    <p></p>
+    <a href="files/blckdgm.png" target= "_blank" title="BLOCK_DGM">BLOCK DIAGRAM</a>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-black w3-wide"> </span>
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">CONTACT US</h3>
+
+    <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+        <img src="files/pluto.png" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Tallahassee, FL<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 (850) 410-6455<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ar16b@my.fsu.edu<br>
+        </div>
+        <p>We would love your feedback!</p>
+
+        <!--
+        //---
+        THIS ONE DOESN'T WORK
+        //---
         
-        <img src="files/Team.png" style="width:85%; max-width:1300px; min-width: 400px;">
+        <form action="files/email.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="email_address">
+            </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="feedback">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+        </form>
 
-        <!-- End page content -->
+        //---
+        THIS ONE SEMI-WORKS (could be issue with email.php script)
+        ^ it sends an email (always) but in email can only see feedback message and not the user's email
+        ^^ it also looks much uglier than first one
+        //---
+
+        <form action="/feedback_form.php" method="post">
+
+        <label>Email Address</label>
+        <input type="text" name="email_address" size="40">
+
+        <label>Your Feedback</label>
+        <textarea name="feedback" cols="50" rows="10"></textarea>
+
+        <input type="submit" name="send" value="Submit">
+
+        </form>
+        -->
+
     </div>
     </div>
+</div>
 
-    <!-- Footer -->
-    <!--
-    <footer class="w3-center w3-black w3-padding-16">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-    </footer>
-            -->
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey w3-hover-light-green"><i class="fa fa-arrow-up w3-margin-right"></i>Back to Top</a>
+</footer>
+    
+<script>
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) { 
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    }
+    else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) { 
+        navbar.className = "w3-bar" + " w3-black" + " w3-padding-32" + " w3-card";
+    } else {
+        navbar.className = navbar.className.replace("w3-bar w3-black w3-wide w3-padding-32 w3-card", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+</script>
+
+
 </body>
 </html>
