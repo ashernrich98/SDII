@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <title>T307</title>
 <meta charset="UTF-8">
@@ -14,7 +14,7 @@
 <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", Helvetica;}
     body, html {
-      height: 800px;
+      height: 100%;
       color: black;
       background-color: silver;
       line-height: 1.8;
@@ -29,7 +29,7 @@
 
     .bgimg-1 {
     background-image: url("files/bkgnd.png");
-    min-height: 100%;
+    min-height: 800px;
     text-align: center;
     }
 
@@ -89,16 +89,16 @@
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space:nowrap;">
+    <div class="w3-display-middle w3-animate-opacity">
     <img src="files/t307logo.png" style="width:25%; min-width:50px; min-height:50px;">
     <span class="w3-xxlarge w3-text-black w3-wide"><p></p>Narrow Band "Oscilloscope"<p></p>for High Power Tuning<p></p>of NMR Probes</span>
     </div>
 </div>
 
 <!-- Container (Abstract Section) -->
-<div class="w3-auto w3-container w3-padding-32 w3-center" style="max-width:1750px" id="abstract"></div>
+<div class="w3-auto w3-container w3-padding-32 w3-center" style="max-width:1750px" id="abstract">
     <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">ABSTRACT</h3>
-    <p class="w3-center w3-large">The National High Magnetic Field Laboratory performs an experiment that involves radio frequency pulses. The tools they use for the experiment are very expensive. For example, the oscilloscopes used for the experiment can cost upwards of $20K. While the oscilloscope is able to observe the experiment, many of its other features go unused. This creates the need for a cheaper, but just as effective solution. Our project uses a Software Defined Radio (SDR) as the oscilloscope’s cost-efficient replacement.</p>
+    <p class="w3-center w3-large w3-padding-top-32">The National High Magnetic Field Laboratory performs an experiment that involves radio frequency pulses. The tools they use for the experiment are very expensive. For example, the oscilloscopes used for the experiment can cost upwards of $20K. While the oscilloscope is able to observe the experiment, many of its other features go unused. This creates the need for a cheaper, but just as effective solution. Our project uses a Software Defined Radio (SDR) as the oscilloscope’s cost-efficient replacement.</p>
     <p class="w3-center w3-large">Our project develops an oscilloscope based on SDRs because it uses radio frequencies. We program the SDR to observe a range of frequencies. Then, the SDR is used in combination with software to record the incoming radio frequency pulses. That software displays the incoming data to the user as an oscilloscope would. As the data comes in, it must be aligned with the running experiment. To do this, we sync the SDR with the experiment using a trigger. We then add a second SDR set up the same way to observe the second set of pulses. Our SDR solution is then inserted into the experiment exactly where and how the oscilloscope would be hooked up.</p>
     <p class="w3-center w3-large">Through the completion of this project, we are able to accurately measure, record, and display the radio frequency pulses from the experiment. It can also be programmed to observe different frequency ranges. This allows the SDRs to successfully copy the oscilloscopes. The user can make the correct adjustments to the experiment using our solution. Therefore, the Magnetic Lab can replace the oscilloscopes used for these experiments with our SDR solution. This helps the Lab to save thousands of dollars. It also allows them to use the oscilloscopes for other purposes instead of a simple observation.</p>
 </div>
@@ -196,13 +196,23 @@
 	<!--Project Scope
 	<p class="w3-center w3-xlarge w3-padding-top-16"><em>Project Progress</em></p>
     -->
+<!-- Container (Abstract Section) -->
+	<div class="w3-auto w3-container w3-padding-32 w3-center" style="max-width:1750px" id="abstract">
+    <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">FUTURE WORK</h3>
+    
+	<p class="w3-center w3-large w3-padding-top-32"><i class="fa fa-circle" style="font-size:12px"></i> Use MATLAB to convert ADC output from SDR back to analog input using DAC. </p>
+	
+    <p class="w3-center w3-large"><i class="fa fa-circle" style="font-size:12px"></i> Implement the trigger function to allow properly synchronize the data.</p>
+	
+    <p class="w3-center w3-large"><i class="fa fa-circle" style="font-size:12px"></i> Design and 3D print the box that the prototype will be held within. </p>
+	
 	<div class="row">
     <p class="w3-wide"><i class="fa fa-spinner" style="font-size:24px"></i>Project Progress</p>
     <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
     </div>
 	</div>
-
+	</div>	
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
@@ -212,9 +222,10 @@
     </div>
 </div>
 
-<div class="w3-content w3-container w3-padding-64" id="documents">
-    <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">DOCUMENTS</h3>
-    <p></p>
+<!--Documents Section-->
+<div class="w3-content w3-container w3-padding-64" style="max-width:1750px" id="documents">
+    <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">DOCUMENTS</h3>    
+	<p></p>
     <a href="files/abstract.pdf" target= "_blank" title="ABSTRACT">ABSTRACT</a>
     <p></p>
     <a href="files/vdr3.pdf" target= "_blank" title="VDR3">VDR3</a>
@@ -263,23 +274,17 @@
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
         </form>
-
         //---
         THIS ONE SEMI-WORKS (could be issue with email.php script)
         ^ it sends an email (always) but in email can only see feedback message and not the user's email
         ^^ it also looks much uglier than first one
         //---
-
         <form action="/feedback_form.php" method="post">
-
         <label>Email Address</label>
         <input type="text" name="email_address" size="40">
-
         <label>Your Feedback</label>
         <textarea name="feedback" cols="50" rows="10"></textarea>
-
         <input type="submit" name="send" value="Submit">
-
         </form>
         -->
 
