@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <title>T307</title>
 <meta charset="UTF-8">
@@ -71,6 +71,7 @@
     
     <div class="w3-right ">
         <a href="#home" class="w3-bar-item w3-button w3-hover-aqua"><i class="fa fa-home"></i> HOME</a>
+        <a href="#abstract" class="w3-bar-item w3-button w3-hide-small w3-hover-light-green"><i class="fa fa-question-circle"></i> ABSTRACT</a>
         <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-light-green"><i class="fa fa-user"></i> ABOUT</a>
         <a href="#documents" class="w3-bar-item w3-button w3-hide-small w3-hover-light-green"><i class="fa fa-th"></i> DOCUMENTS</a>
         <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-light-green"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -79,6 +80,7 @@
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+    <a href="#abstract" class="w3-bar-item w3-button" onclick="toggleFunction()">ABSTRACT</a>
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#documents" class="w3-bar-item w3-button" onclick="toggleFunction()">DOCUMENTS</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
@@ -93,8 +95,22 @@
     </div>
 </div>
 
+<!-- Container (Abstract Section) -->
+<div class="w3-auto w3-container w3-padding-32 w3-center" style="max-width:1750px" id="abstract"></div>
+    <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">ABSTRACT</h3>
+    <p class="w3-center w3-large">The National High Magnetic Field Laboratory performs an experiment that involves radio frequency pulses. The tools they use for the experiment are very expensive. For example, the oscilloscopes used for the experiment can cost upwards of $20K. While the oscilloscope is able to observe the experiment, many of its other features go unused. This creates the need for a cheaper, but just as effective solution. Our project uses a Software Defined Radio (SDR) as the oscilloscope’s cost-efficient replacement.</p>
+    <p class="w3-center w3-large">Our project develops an oscilloscope based on SDRs because it uses radio frequencies. We program the SDR to observe a range of frequencies. Then, the SDR is used in combination with software to record the incoming radio frequency pulses. That software displays the incoming data to the user as an oscilloscope would. As the data comes in, it must be aligned with the running experiment. To do this, we sync the SDR with the experiment using a trigger. We then add a second SDR set up the same way to observe the second set of pulses. Our SDR solution is then inserted into the experiment exactly where and how the oscilloscope would be hooked up.</p>
+    <p class="w3-center w3-large">Through the completion of this project, we are able to accurately measure, record, and display the radio frequency pulses from the experiment. It can also be programmed to observe different frequency ranges. This allows the SDRs to successfully copy the oscilloscopes. The user can make the correct adjustments to the experiment using our solution. Therefore, the Magnetic Lab can replace the oscilloscopes used for these experiments with our SDR solution. This helps the Lab to save thousands of dollars. It also allows them to use the oscilloscopes for other purposes instead of a simple observation.</p>
+</div>
+
 <!-- Container (About Section) -->
 <div class="w3-auto w3-container w3-padding-64 w3-center" style="max-width:1750px" id="about">
+<!--
+    <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">ABSTRACT</h3>
+    <p class="w3-center w3-large">The National High Magnetic Field Laboratory performs an experiment that involves radio frequency pulses. The tools they use for the experiment are very expensive. For example, the oscilloscopes used for the experiment can cost upwards of $20K. While the oscilloscope is able to observe the experiment, many of its other features go unused. This creates the need for a cheaper, but just as effective solution. Our project uses a Software Defined Radio (SDR) as the oscilloscope’s cost-efficient replacement.</p>
+    <p class="w3-center w3-large">Our project develops an oscilloscope based on SDRs because it uses radio frequencies. We program the SDR to observe a range of frequencies. Then, the SDR is used in combination with software to record the incoming radio frequency pulses. That software displays the incoming data to the user as an oscilloscope would. As the data comes in, it must be aligned with the running experiment. To do this, we sync the SDR with the experiment using a trigger. We then add a second SDR set up the same way to observe the second set of pulses. Our SDR solution is then inserted into the experiment exactly where and how the oscilloscope would be hooked up.</p>
+    <p class="w3-center w3-large">Through the completion of this project, we are able to accurately measure, record, and display the radio frequency pulses from the experiment. It can also be programmed to observe different frequency ranges. This allows the SDRs to successfully copy the oscilloscopes. The user can make the correct adjustments to the experiment using our solution. Therefore, the Magnetic Lab can replace the oscilloscopes used for these experiments with our SDR solution. This helps the Lab to save thousands of dollars. It also allows them to use the oscilloscopes for other purposes instead of a simple observation.</p>
+-->
     <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">ABOUT</h3>
     <p class="w3-center w3-xlarge w3-padding-top-16"><em>TEAM INFO</em></p>
     <p class="w3-center w3-large">T307 is comprised of 5 unique individuals who found a shared interest in this project.</p>
