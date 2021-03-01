@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <title>T307</title>
 <meta charset="UTF-8">
@@ -57,6 +57,7 @@
         min-height: 400px;
     }
     }
+
 </style>
 
 <body>
@@ -67,24 +68,54 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
     </a>
-
+ 
     <div class="w3-left w3-hide-small">
-        <img src="files/coe.png" style="width:115px;">
-        <img src="files/keysight.png" style="width:115px;">
-        <img src="files/maglab.png" style="width:115px;">
+        <img src="files/coe_white.png" style="height:30px;">
+        <img src="files/keysight_white.png" style="height:30px;">
+        <img src="files/maglab_white.png" style="height:30px;">
     </div>
 
     <div class="w3-left  w3-hide-medium w3-hide-large">
-        <img src="files/coe.png" style="width:100px;">
-        <img src="files/keysight.png" style="width:100px;">
-        <img src="files/maglab.png" style="width:100px;">
+        <img src="files/coe_white.png" style="height:25px;">
+        <img src="files/keysight_white.png" style="height:25px;">
+        <img src="files/maglab_white.png" style="height:25px;">
     </div>
-    
+
     <div class="w3-right ">
         <a href="#home" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-aqua"><i class="fa fa-home"></i> HOME</a>
         <a href="#abstract" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-light-green"><i class="fa fa-question-circle"></i> ABSTRACT</a>
         <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-light-green"><i class="fa fa-user"></i> ABOUT</a>
         <a href="#documents" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-light-green"><i class="fa fa-th"></i> DOCUMENTS</a>
+        
+        <!-- Couldn't figure out how to fit everything // or make the dropdown menu scrollable
+        <div class="w3-dropdown-hover">
+            <button href="#documents" class="w3-button w3-hide-small w3-hide-medium w3-hover-light-green"><i class="fa fa-th"></i> DOCUMENTS</button>
+            <div class="w3-dropdown-content w3-bar-block w3-black w3-left" style="width:50%;">
+                <div class="w3-col l2 w3-center">
+                    <a href="files/abstract.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="ABSTRACT"><b>ABSTRACT</b></a>
+                    <a href="files/advisor_meeting.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="ADVISOR"><b>ADVISOR MEETING</b></a>
+                    <a href="files/bill_of_materials.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black"target= "_blank" title="BOM"><b>BILL OF MATERIALS</b></a>
+                    <a href="files/concept_generation.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="CGENERATION"><b>CONCEPT GENERATION</b></a>
+                    <a href="files/concept_selection.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="CSELECTION"><b>CONCEPT SELECTION</b></a>
+                    <a href="files/customer_needs.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="NEEDS"><b>CUSTOMER NEEDS</b></a>
+                    <a href="files/vdr1.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="VDR1"><b>DESIGN REVIEW 1.0</b></a>
+                    <a href="files/vdr2.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="VDR2"><b>DESIGN REVIEW 2.0</b></a>
+                    <a href="files/vdr3.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="VDR3"><b>DESIGN REVIEW 3.0</b></a>
+                </div>
+
+                <div class="w3-col l2 w3-center">
+                    <a href="files/vdr4.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="VDR4"><b>DESIGN REVIEW 4.0</b></a>
+                    <a href="files/fall_project_plan.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="FPP"><b>FALL PROJECT PLAN</b></a>
+                    <a href="files/functional_decomposition.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="FDECOMP"><b>FUNCTIONAL DECOMPOSITION</b></a>
+                    <a href="files/preliminary_detailed_design.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black"target= "_blank" title="PDD"><b>PRELIMINARY DETAILED DESIGN</b></a>
+                    <a href="files/project_scope.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="SCOPE"><b>PROJECT SCOPE</b></a>
+                    <a href="files/project_targets.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="TARGETS"><b>PROJECT TARGETS</b></a>
+                    <a href="files/sponsor_meeting.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="SPONSOR"><b>SPONSOR MEETING</b></a>
+                    <a href="files/spring_project_plan.pdf" class="w3-bar-item w3-button w3-hover-light-green w3-hover-text-black" target= "_blank" title="SPP"><b>SPRING PROJECT PLAN</b></a>
+                </div>              
+            </div>
+        </div>
+        -->
         <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-light-green"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
 
@@ -117,7 +148,7 @@
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-auto w3-container w3-padding-64 w3-center" style="max-width:1750px" id="about">
+<div class="w3-auto w3-container w3-padding-32 w3-center" style="max-width:1750px" id="about">
 <!--
     <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">ABSTRACT</h3>
     <p class="w3-center w3-large">The National High Magnetic Field Laboratory performs an experiment that involves radio frequency pulses. The tools they use for the experiment are very expensive. For example, the oscilloscopes used for the experiment can cost upwards of $20K. While the oscilloscope is able to observe the experiment, many of its other features go unused. This creates the need for a cheaper, but just as effective solution. Our project uses a Software Defined Radio (SDR) as the oscilloscope’s cost-efficient replacement.</p>
@@ -140,26 +171,43 @@
 		<div class="w3-col l2 w3-center w3-padding-large">
         <p><b>Jonathan Burt</b></p>
 		<p>Computer Engingeering Major</p><p>Lead programmer. Reliable recorder of correspondance between the group. Key producer of insight to accelerate assignment finalization.</p>
+            <div class="social">
+                <a href="mailto:jwb18cx@my.fsu.edu?subject=T307 (To: Burt)" class="w3-hover-text-aqua"><i class="fa fa-envelope"></i></a>
+            </div>            
         </div>
-		
+
 		<div class="w3-col l2 w3-center w3-padding-large">
         <p><b>Gabriel De Leon</b></p>
 		<p>Computer Engingeering Major</p><p>The spearhead of website development. Essential monitor of team finances. Exemplary availability for assistance to others.</p>
+            <div class="social">
+                <a href="mailto:gwd16b@my.fsu.edu?subject=T307 (To: De Leon)" class="w3-hover-text-aqua"><i class="fa fa-envelope"></i></a>
+            </div>
         </div>
 		
 		<div class="w3-col l2 w3-center w3-padding-large">
         <p><b>Emil Lobachev</b></p>
 		<p>Electrical Engingeering Major</p><p>Lead organizer to achieve targets. Key hardware and software integrator. Responsible for effective communication flow with external contacts.</p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/emil-lobachev-b9754414a/" target="_blank" class="w3-hover-text-aqua"><i class="fa fa-linkedin"></i></a>
+                <a href="mailto:el17d@my.fsu.edu?subject=T307 (To: Lobachev)" class="w3-hover-text-aqua"><i class="fa fa-envelope"></i></a>
+            </div>
         </div>
 		
 		<div class="w3-col l2 w3-center w3-padding-large">
         <p><b>Asher Rich</b></p>
-		<p>Computer Engingeering Major</p><p>Team Leader. Tasking asignor. Assignment verifier and finalizer. Administrator of agile operations.</p>
+		<p>Computer Engingeering Major</p><p>Team Leader. Tasking assignor. Assignment verifier and finalizer. Administrator of agile operations.</p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/asher-rich-295129143/" target="_blank" class="w3-hover-text-aqua"><i class="fa fa-linkedin"></i></a>
+                <a href="mailto:ar16b@my.fsu.edu?subject=T307 (To: Rich)" class="w3-hover-text-aqua"><i class="fa fa-envelope"></i></a>
+            </div>
         </div>
-		
-		<div class="w3-col l2 w3-center w3-padding-large">
+        
+        <div class="w3-col l2 w3-center w3-padding-large">
         <p><b>Kyle York</b></p>
 		<p>Electrical Engingeering Major</p><p>Lead researcher. Principal circuit assembly and in charge of project design aspects. Information and communication reference point. </p>
+            <div class="social">
+                <a href="mailto:kny18b@my.fsu.edu?subject=T307 (To: York)" class="w3-hover-text-aqua"><i class="fa fa-envelope"></i></a>
+            </div>
         </div>		
     </div>
 
@@ -179,25 +227,25 @@
 	<!--This is for the advisor information and columns-->
 	<div class="row">
 		
-		<!-- the "l2" allows for the columns to collapse when shrinking the page quicker.
-			the 2 part is for the columns and was the best I could do unfortunately
-		<div class="w3-col l6 w3-center w3-padding-large">
-        <p><b>Dr. William Brey</b></p>
-		<p>The team's official sponsor of the project. Dr. Brey is also the targeted customer of our project.</p>
-        </div>
-		
-		<div class="w3-col l6 w3-center w3-padding-large">
-        <p><b>Paul Holcomb</b></p>
-		<p>The team's advisor from Keysight Technologies. Mr. Holcomb's knowledge regarding oscilloscopes greatly aided our project.</p>
-        </div>
-		
-    	We this is for Dr. Arora. We don't have a picture of him or a description. He isn't in this photo so I excluded him.
-		Pay attention to this "l4". If we add Arrora, we must change "l6" to "l4". 
-		<div class="w3-col l4 w3-center w3-padding-large">
-        <p><i class="fa fa-user"><b></i>Kyle York</b></p>
-		<p>A fourth year Electrical Engingeering Major. The lead on research our project reserach and circuit assembly.</p>
-        </div>
-        -->	
+    <!-- the "l2" allows for the columns to collapse when shrinking the page quicker.
+        the 2 part is for the columns and was the best I could do unfortunately
+    <div class="w3-col l6 w3-center w3-padding-large">
+    <p><b>Dr. William Brey</b></p>
+    <p>The team's official sponsor of the project. Dr. Brey is also the targeted customer of our project.</p>
+    </div>
+    
+    <div class="w3-col l6 w3-center w3-padding-large">
+    <p><b>Paul Holcomb</b></p>
+    <p>The team's advisor from Keysight Technologies. Mr. Holcomb's knowledge regarding oscilloscopes greatly aided our project.</p>
+    </div>
+    
+    We this is for Dr. Arora. We don't have a picture of him or a description. He isn't in this photo so I excluded him.
+    Pay attention to this "l4". If we add Arrora, we must change "l6" to "l4". 
+    <div class="w3-col l4 w3-center w3-padding-large">
+    <p><i class="fa fa-user"><b></i>Kyle York</b></p>
+    <p>A fourth year Electrical Engingeering Major. The lead on research our project reserach and circuit assembly.</p>
+    </div>
+    -->	
     </div>
 	
 	<div>
@@ -205,20 +253,18 @@
 	<img src="files/sponsors.png" class="w3-image w3-center w3-padding" alt="Advisor/Sponsor Photo" width="600">
     </div>
 	
-	<!--Project Scope
-	<p class="w3-center w3-xlarge w3-padding-top-16"><em>Project Progress</em></p>
-    -->
+	<p class="w3-center w3-xlarge w3-padding-top-16"><em>FUTURE WORK</em></p>
+    <p class="w3-center w3-large">To use MATLAB to convert ADC output from the SDR back to analog input using DAC.</p>
+    <p class="w3-center w3-large">To implement the trigger function and allow proper synchronization of data.</p>
+    <p class="w3-center w3-large">To design and 3D print the box that the prototype will be held within.</p>
+
+
 	<div class="row">
-    <p class="w3-wide"><i class="fa fa-spinner" style="font-size:24px"></i>Project Progress</p>
+    <p class="w3-wide"><i class="fa fa-check-circle" style="font-size:24px"></i>Project Progress</p>
     <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
     </div>
 	</div>
-
-    <p class="w3-center w3-xlarge w3-padding-top-16"><em>FUTURE WORK</em></p>
-    <p class="w3-center w3-large">To use MATLAB to convert ADC output from the SDR back to analog input using DAC.</p>
-    <p class="w3-center w3-large">To implement the trigger function and allow proper synchronization of data.</p>
-    <p class="w3-center w3-large">To design and 3D print the box that the prototype will be held within.</p>
 
 </div>
 
@@ -229,16 +275,47 @@
     </div>
 </div>
 
-<div class="w3-content w3-container w3-padding-64" style="max-width:1750px" id="documents">
+<div class="w3-content w3-container w3-padding-32" style="max-width:1750px" id="documents">
+
+    <!-- Docs on Left, Block DGM on Right / Separate by Two Columns (FALL SPRING) -->   
+
     <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">DOCUMENTS</h3>
+
     <p></p>
-    <a href="files/abstract.pdf" target= "_blank" title="ABSTRACT">ABSTRACT</a>
+    <a href="files/abstract.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="ABSTRACT"><b>ABSTRACT</b></a>
     <p></p>
-    <a href="files/vdr3.pdf" target= "_blank" title="VDR3">VDR3</a>
+    <a href="files/advisor_meeting.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="ADVISOR"><b>ADVISOR MEETING</b></a>
     <p></p>
-    <a href="files/vdr4.pdf" target= "_blank" title="VDR4">VDR4</a>
+    <a href="files/bill_of_materials.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="BOM"><b>BILL OF MATERIALS</b></a>
     <p></p>
-    <a href="files/blckdgm.png" target= "_blank" title="BLOCK_DGM">BLOCK DIAGRAM</a>
+    <a href="files/concept_generation.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="CGENERATION"><b>CONCEPT GENERATION</b></a>
+    <p></p>
+    <a href="files/concept_selection.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="CSELECTION"><b>CONCEPT SELECTION</b></a>
+    <p></p>
+    <a href="files/customer_needs.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="NEEDS"><b>CUSTOMER NEEDS</b></a>
+    <p></p>
+    <a href="files/vdr1.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="VDR1"><b>DESIGN REVIEW 1.0</b></a>
+    <p></p>
+    <a href="files/vdr2.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="VDR2"><b>DESIGN REVIEW 2.0</b></a>
+    <p></p>
+    <a href="files/vdr3.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="VDR3"><b>DESIGN REVIEW 3.0</b></a>
+    <p></p>
+    <a href="files/vdr4.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="VDR4"><b>DESIGN REVIEW 4.0</b></a>
+    <p></p>
+    <a href="files/fall_project_plan.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="FPP"><b>FALL PROJECT PLAN</b></a>
+    <p></p>
+    <a href="files/functional_decomposition.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="FDECOMP"><b>FUNCTIONAL DECOMPOSITION</b></a>
+    <p></p>
+    <a href="files/preliminary_detailed_design.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="PDD"><b>PRELIMINARY DETAILED DESIGN</b></a>
+    <p></p>
+    <a href="files/project_scope.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="SCOPE"><b>PROJECT SCOPE</b></a>
+    <p></p>
+    <a href="files/project_targets.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="TARGETS"><b>PROJECT TARGETS</b></a>
+    <p></p>
+    <a href="files/sponsor_meeting.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="SPONSOR"><b>SPONSOR MEETING</b></a>
+    <p></p>
+    <a href="files/spring_project_plan.pdf" class="w3-text-black w3-hover-light-green w3-hover-text-white" target= "_blank" title="SPP"><b>SPRING PROJECT PLAN</b></a>
+
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
@@ -249,7 +326,7 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
+<div class="w3-content w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-top w3-border-bottom w3-border-white w3-wide w3-xxlarge w3-center">CONTACT US</h3>
 
     <div class="w3-row w3-padding-32 w3-section">
@@ -260,12 +337,46 @@
     <div class="w3-col m8 w3-panel">
         <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Tallahassee, FL<br>
+        <!--
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +1 (850) 410-6455<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ar16b@my.fsu.edu<br>
+        -->
         </div>
-        <p>We would love your feedback!</p>
 
+        <p>We would love to hear your feedback!</p>
+        <p>Reach out to one of us directly:</p>
+
+        <div class="social">
+            <p></p>
+            
+            <a  class="w3-hover-text-black"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:jwb18cx@my.fsu.edu?subject=T307 (To: Burt)" class="w3-hover-text-aqua"><i class="fa fa-envelope"></i></a>
+            <b>Jonathan Burt</b>
+            <p></p>
+            
+            <a target="_blank" class="w3-hover-text-black"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:gwd16b@my.fsu.edu?subject=T307 (To: De Leon)" class="w3-hover-text-aqua"><i class="fa fa-envelope"></i></a>
+            <b>Gabriel De Leon</b>
+            <p></p>
+            
+            <a href="https://www.linkedin.com/in/emil-lobachev-b9754414a/" target="_blank" class="w3-hover-text-aqua"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:el17d@my.fsu.edu?subject=T307 (To: Lobachev)" class="w3-hover-text-aqua"><i class="fa fa-envelope"></i></a>
+            <b>Emil Lobachev</b>
+            <p></p>
+            
+            <a href="https://www.linkedin.com/in/asher-rich-295129143/" target="_blank" class="w3-hover-text-aqua"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:ar16b@my.fsu.edu?subject=T307 (To: Rich)" class="w3-hover-text-aqua"><i class="fa fa-envelope"></i></a>
+            <b>Asher Rich</b>
+            <p></p>
+            
+            <a  target="_blank" class="w3-hover-text-black"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:kny18b@my.fsu.edu?subject=T307 (To: York)" class="w3-hover-text-aqua"><i class="fa fa-envelope"></i></a>
+            <b>Kyle York</b>
+            <p></p>
+        </div>
+        
         <!--
+        <p>Reach out to the whole team:</p>
         //---
         THIS ONE DOESN'T WORK
         //---
@@ -321,7 +432,7 @@ function myFunction() {
     var navbar = document.getElementById("myNavbar");
     
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) { 
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-dark-gray";
     }
     else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) { 
         navbar.className = "w3-bar" + " w3-black" + " w3-padding-32" + " w3-card";
